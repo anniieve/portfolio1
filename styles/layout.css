@@ -1,0 +1,558 @@
+*{margin: 0}
+*{box-sizing: border-box}
+html {
+  scroll-behavior: smooth;
+  }
+/*Sivun asettelu ja määritykset*/
+body {
+    background-color: lightcyan;
+    font-size: 100%;
+    padding: 0;
+    font-size: 1em;
+    font-family: 'Assistant', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+  }
+
+#page {
+    width: 80%;
+    /*height: 1300px;*/
+    margin: auto;
+    background-color: lightgray;
+  }
+
+/*menun ja footerin määritykset*/
+nav, footer {
+    background-color: #f6a3eb;
+    color: #F7F5EE;
+    text-align: center;
+    width: 80%;
+    z-index: 100;
+    }
+footer {
+    margin: auto;
+    padding: 10px 0;
+    }
+
+/*Linkkien asettelu*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    background-color: #f6a3eb;
+    width: 80%;
+    z-index: 100;
+    }
+
+  li {
+    display: inline;
+  }
+  
+  li a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 10px;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #fa57d1;
+  }
+  
+  .active {
+    background-color: #f9a79c;
+    }
+
+/*Ikonit*/
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+    vertical-align: middle;
+    font-size: large;
+    padding: 2px 0 5px 0;
+  }
+
+/*Otsikon asettelu ja määritykset*/
+header {
+    background-image: linear-gradient(#f6a3eb, rgb(243, 235, 158));
+    background-color: #f1e3e0;
+    background-size: auto;
+    text-shadow: #f434da 2px 1px;
+    color: #eee8e7;
+    min-height: 80px;
+    font-size: 170%;
+    padding: 1em;
+    text-align: center;
+    letter-spacing: 0.1875em;
+    margin-top: 31px;
+   }
+
+h2 {
+    color: black;
+    text-align: center;
+    padding: 30px;
+}  
+
+#tietoa {
+    background-color: rgb(243, 235, 158);
+    vertical-align: top;
+    text-align: center;
+    scroll-margin-top: 31px;
+    padding: 5px 0;
+}
+
+.omakuva {
+  height: auto;
+}
+
+h3 {
+    padding: 15px;
+}
+h4 {
+    padding: 15px;
+}
+
+.kuva {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 30%;
+    display: inline-block;
+    margin: 30px 30px;
+  }
+.kuva:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+.sisältö {
+    padding: 30px 5px;
+    background-color: beige;
+  }
+
+.esittely {
+    background-color: beige;
+    width: 30%;
+    padding: 20px 5px;
+    margin: 30px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+#portfolio {
+    background-color: rgb(243, 235, 158);
+    text-align: center;
+    scroll-margin-top: 31px;
+    padding: 5px 15px;
+    
+}
+.osaamiskuva {
+  height: 300px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 30%;
+    margin: 25px 5px;
+    text-align: center;
+    font-family: arial;
+    display: inline-block;
+    padding: 0;
+    background-color: #f6a3eb;
+    
+}
+.title {
+    color: grey;
+    font-size: 18px;
+  }
+
+  .progressbar {
+    background-color: rgb(192, 192, 192);
+    max-width: 80%;
+    border-radius: 15px;
+    margin: 10px auto;
+
+  }
+  
+  .skill {
+    background-color: #f6a3eb;
+    color: white;
+    font-size: 20px;
+    border-radius: 15px;
+  }
+  
+  .html {
+    width: 80%;
+    background-image: linear-gradient(100deg, rgb(255, 171, 255), rgb(245, 149, 149), rgb(251, 251, 102));
+  }
+  
+  .python {
+    width: 75%;
+    background-image: linear-gradient(100deg, rgb(255, 171, 255), rgb(245, 149, 149), rgb(251, 251, 102));
+  }
+
+  .linux {
+    width: 80%;
+    background-image: linear-gradient(100deg, rgb(255, 171, 255), rgb(245, 149, 149), rgb(251, 251, 102));
+  }
+
+  .mysql {
+    width: 85%;
+    background-image: linear-gradient(100deg, rgb(255, 171, 255), rgb(245, 149, 149), rgb(251, 251, 102));
+  }
+
+  .ruotsi {
+    width: 80%;
+    background-image: linear-gradient(100deg, rgb(255, 171, 255), rgb(245, 149, 149), rgb(251, 251, 102));
+  }
+  
+  .powershell {
+    width: 75%;
+    background-image: linear-gradient(100deg, rgb(255, 171, 255), rgb(245, 149, 149), rgb(251, 251, 102));
+  }
+
+  .shell {
+    width: 80%;
+    background-image: linear-gradient(100deg, rgb(255, 171, 255), rgb(245, 149, 149), rgb(251, 251, 102));
+  }
+
+  .fullstack {
+    width: 65%;
+    background-image: linear-gradient(100deg, rgb(255, 171, 255), rgb(245, 149, 149), rgb(251, 251, 102));
+  }
+ 
+
+
+#harrastukset {
+    background-color: rgb(243, 235, 158);
+    text-align: center;
+    scroll-margin-top: 31px;
+    padding: 5px 0;
+}
+
+.nappulakuva {
+    position: relative;
+    width: 30%;
+    max-width: 400px;
+    display: inline-block;
+    margin: 5px;
+}
+.nappulakuva img {
+    width: 100%;
+    height: 470px;
+    border-radius: 5px;
+}
+.nappulakuva .btn {
+    position: relative;
+    top: 92.7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgb(250, 187, 251);
+    color: black;
+    font-size: 16px;
+    padding: 12px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 0 5px 5px;
+    text-align: center;
+    width: 100.093%;
+    /*border-style: solid;
+    border-color: #f6a3eb;*/
+  }
+  
+.btn {
+    position: absolute;
+}  
+
+.nappulakuva .btn:hover {
+    color: white;
+    opacity: 1;
+  }
+
+.tekstikenttä {
+  background-color: rgb(250, 187, 251);
+  border-style: solid;
+  border-color: #f6a3eb;
+  border-radius: 15px;
+  color: black;
+  width: 80%;
+  text-align: center;
+  display: inline-block;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 1.05em;
+}
+
+#koulutus {
+    background-color: rgb(243, 235, 158);
+    scroll-margin-top: 31px;
+    padding: 5px 0;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+  }
+  
+
+/* Harrastussivun määritykset */
+#harsivu {
+  background-color: rgb(243, 235, 158);
+  width: 80%;
+  margin: auto;
+}
+
+#ulkoilu {
+  padding: 30px;
+  text-align: center;
+  scroll-margin-top: 20px;
+}
+
+#leivonta {
+  padding: 30px;
+  text-align: center;
+  background-color: rgb(243, 235, 158);
+  scroll-margin-top: 20px;
+}
+
+#käsityöt {
+  padding: 30px;
+  text-align: center;
+  background-color: rgb(243, 235, 158);
+  scroll-margin-top: 20px;
+}
+
+.koko {
+  width: 190px;
+  height: auto;
+}
+
+.galleria {
+  display:contents;
+  padding: 3px;
+  margin-top: 10px;
+}
+
+.nappu {
+  background-color: #f6a3eb;
+  width: auto;
+  font-size: 0.85em;
+  position: relative;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+
+
+/* Media queries - Responsive timeline on screens less than 720px wide */
+@media screen and (max-width: 720px) {
+    
+
+ /* navin ja headerin media screen asettelu */
+    li a {
+      display: block;
+      padding: 0;
+    }
+    header {
+      margin-top: 123px;
+      min-height: 60px;
+      width: auto;              
+      font-size: 140%;
+    }
+    ul {
+      width: 100%;
+    } 
+    footer {
+      width: 100%;
+    }
+    
+ /* media screen määrittelyt id:ille ja luokille */
+    #page {
+      width: 100%;
+    }
+    
+    #tietoa {
+      scroll-margin-top: 124px;
+      padding-bottom: 40px;
+    }
+    .kuva {
+      width: 75%;
+      margin: 20px;
+    }
+    .esittely {
+      width: 75%;
+      padding: 10px;
+      margin: 20px;
+    }
+
+    #portfolio {
+      scroll-margin-top: 124px;
+      padding: 0 30px 40px 30px;
+    }
+    .card {
+      width: 75%;
+      height: auto;
+      margin: 20px;
+      padding: 0;
+      box-shadow: 10px 7px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+      
+    #harrastukset {
+      scroll-margin-top: 124px;
+      padding-bottom: 20px;
+    }
+      
+    .nappulakuva {
+      position: relative;
+      width: 50%;
+      margin: 5px;
+      width: 75%;
+    }
+    #koulutus {
+      scroll-margin-top: 124px;
+      padding-bottom: 20px;
+    }
+    /* Place the timelime to the left */
+    .timeline::after {
+      left: 31px;
+    }
+      
+    /* Full-width containers */
+    .container {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+      
+    /* Make sure that all arrows are pointing leftwards */
+    .container::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+    
+    /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+      left: 15px;
+    }
+      
+    /* Make all right containers behave like the left ones */
+    .right {
+      left: 0%;
+    }
+  /*Harrastussivun mediascreen määrittelyt*/
+    #harsivu {
+      width: 100%;
+    }
+    #ulkoilu {
+      scroll-margin-top: 121px;
+    }
+    #leivonta {
+      scroll-margin-top: 121px;
+    }
+    #käsityöt {
+      scroll-margin-top: 121px;
+    }
+    .galleria {
+      display: block;
+    }
+    img {
+      width: 75%;
+    }
+    .koko {
+      width: 75%;
+    }
+  }

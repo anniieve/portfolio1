@@ -1,0 +1,141 @@
+*{margin:0;}
+
+/*Sivun asettelu ja määritykset*/
+body {
+    background-color: lightpink;
+    font-size: 100%;
+    }
+/*Sivun tausta*/
+article {
+	background-color: lightgrey;
+	max-width: 90%;
+    margin: 0px auto;
+    }
+
+/*Fontit*/
+.teksti_dosis {font-family:'Dosis',sans-serif;}
+.teksti_assistant {font-family: 'Assistant', sans-serif;}
+.h3 {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 900; font-size: 2em;
+    margin-bottom: 30px;
+    }
+
+/*Ikonit*/
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 800,
+  'GRAD' 0,
+  'opsz' 48;
+  vertical-align:middle;
+  font-size: large;
+  padding: 6px 10px;
+}
+
+
+/*Otsikon asettelu ja määritykset*/
+header {
+    background-color: #f1e3e0;
+    background-image: url("https://www.publicdomainpictures.net/pictures/410000/velka/image-1628052733ys2.jpg");
+    background-size: auto;
+    color: #f48372;
+    min-height: 80px;
+    font-size: 200%;
+    padding: 1em;
+    text-align: center;
+    letter-spacing: 0.1875em;
+   }
+
+
+
+/*menun ja footerin määritykset*/
+nav, footer {
+    background-color: #f48372;
+    color: #F7F5EE;
+    text-align: center;
+    font-size: 1.25em;
+    
+    }
+
+/*Linkkien asettelu*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    }
+
+  li {
+    display: inline;
+  }
+  
+  li a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #9191e6;
+  }
+  
+  .active {
+    background-color: #f9a79c;
+    font-weight: bold;
+  }
+
+/*sisällön asettelu*/
+section {
+    background-color: #edbeb8;
+    width: 100%;
+    overflow: hidden;
+    }
+
+section.Left, section.Right {
+    background-color: #F7F5EE;
+    border: 1px solid #AC9675;
+    width: 33%;
+    margin: 1.25em;
+    border-radius: 25px;
+    overflow: hidden;
+    padding: 20px;
+    float: left;
+    }
+
+section.Right {
+    float: right;
+    }
+
+/*Kuvan määritykset*/
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    border-radius: 15%;
+    }
+
+.icon_color {
+  color: #f48372
+} /*MITEN TÄN SAIS TOIMIMAAN NOISSA SECTIONEIDEN ICONEISSA?*/
+
+    
+ @media only screen and (max-width: 600px) 
+ {
+   section.Left, section.Right {
+    background-color: lightblue;
+    color: white;
+    float: none;
+    margin: 3em;
+    width: auto;
+  }
+  
+  li a
+  {
+    display: block;
+  }
+  }

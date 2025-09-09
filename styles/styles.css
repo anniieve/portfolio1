@@ -1,0 +1,100 @@
+/*Sivuston taustaväri, fontti, margin*/
+body {background-color:rgb(250, 201, 230);
+    text-align: center; font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+/*Otsikkokentän taustan asettelu ja muotoilu tyylitunnisteella*/
+#banner {
+    background-color: rgb(245, 30, 216);
+  color: black;
+    text-align: center;
+  height: 100px;
+   margin: 0;
+   color: antiquewhite;
+   padding-top: 40px;
+   
+}
+/*Menukentän tausta ja muotoilut tyyliluokalla*/
+.nav {
+    height: 30px;
+    margin: 0;
+    color: red;
+    text-align: center;
+    background-color: rgb(244, 157, 226);
+    font-size: 1.2em;
+    padding-top: 5px;
+}
+/*Otsikkokenttien muotoilut tyyliluokilla*/
+.box {
+    height: 50px;
+    margin: 30px;
+    color: rgb(111, 13, 240);
+    background-color: rgb(244, 157, 226);
+    font-size: 1.8em;
+}
+.eri {
+    height: 40px;
+    margin: 30px;
+    color: rgb(111, 13, 240);
+    background-color: rgb(244, 157, 226);
+    font-size: 1.5em;
+    padding-top: 15px;
+}
+/*Etusivun harrastusluettelon sijainti*/
+.taul {
+    text-align: center;
+}
+h1 {color:rgb(21, 155, 199);text-align: center;}
+h2 {color: rgb(111, 13, 240);text-align: center; margin:auto; padding-top: 15px;}
+h3 {color:rgb(121, 115, 232); text-align: center;}
+/*Etusivun kuvan asettelu*/
+.kuva {
+    margin-top: 30px;
+}
+/*Harrastukset sivun tekstien asettelu*/
+.harr {
+    text-align: center;
+    margin: 20px 40px;
+}
+/*Portfolion tekstien asettelu*/
+.port {
+    text-align: left;
+    margin: 20px 40px;
+}
+
+/*Linkkien väriasetukset*/
+a:link {
+        color: rgb(227, 114, 14);
+        background-color: transparent;
+        text-decoration: none;
+    }
+a:visited {
+        color: darkmagenta;
+        background-color: transparent;
+        text-decoration: none;
+    }
+a:hover {
+        color: rgb(180, 13, 13);
+        background-color: transparent;
+        text-decoration: underline;
+    }
+a:active {
+        color: yellowgreen;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+/*Yhteystiedot sivuilla*/
+    address {color:rgb(126, 93, 146)}
+/*Listojen asettelu sivulla*/
+ul {
+    text-align: left;
+    margin: 20px 30px;
+}
+/*Taulukon muotoilut*/
+table, th, td {
+        border: 1px solid black; border-collapse: collapse;
+        padding: 5px
+    }
+/*Taulukon otsikkosolujen tekstin sijainti*/
+th {text-align: center;}
+table {margin: 50px auto}
